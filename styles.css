@@ -147,7 +147,7 @@ body {
 }
 
 /* Elegant Paper Texture */
-.paper-texture {
+/* .paper-texture {
     position: fixed;
     top: 0;
     left: 0;
@@ -159,7 +159,7 @@ body {
     opacity: 0.015;
     z-index: -2;
     pointer-events: none;
-}
+} */
 
 /* Sophisticated Background Elements */
 .art-elements {
@@ -710,13 +710,13 @@ body {
     background: var(--bg-card);
     border: 1px solid var(--border-soft);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-large);
+    box-shadow: none;
     transition: var(--transition-elegant);
 }
 
 .profile-frame:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-large);
+    box-shadow: none;
 }
 
 .frame-corner {
@@ -757,11 +757,12 @@ body {
 
 .profile-image-container {
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 350px;
+    height: 350px;
     border-radius: var(--border-radius);
     overflow: hidden;
     background: var(--bg-accent);
+    border: none;
 }
 
 .profile-image {
@@ -770,6 +771,7 @@ body {
     object-fit: cover;
     transition: var(--transition-elegant);
     filter: grayscale(10%) contrast(1.05);
+    border: none;
 }
 
 .profile-frame:hover .profile-image {
@@ -1910,10 +1912,10 @@ section {
         max-width: 280px;
     }
 
-    .profile-image-container {
+    /* .profile-image-container {
         width: 200px;
         height: 200px;
-    }
+    } */
 
     .contact-form {
         padding: var(--space-xl);

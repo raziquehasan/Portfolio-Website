@@ -142,7 +142,7 @@ function updateActiveNavLink() {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
+        if (link.getAttribute('href') === #${currentSection}) {
             link.classList.add('active');
         }
     });
@@ -404,7 +404,7 @@ function initCreativeAnimations() {
             const rotateX = (mouseY / rect.height) * 5;
             const rotateY = (mouseX / rect.width) * -5;
             
-            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            this.style.transform = perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg);
         });
         
         profileFrame.addEventListener('mouseleave', function() {
@@ -447,7 +447,7 @@ function initCreativeAnimations() {
         shapes.forEach((shape, index) => {
             const speed = 0.1 + (index * 0.05);
             const yPos = scrolled * speed;
-            shape.style.transform = `translateY(${yPos}px)`;
+            shape.style.transform = translateY(${yPos}px);
         });
     }, 16));
 }
@@ -498,7 +498,7 @@ const resizeObserver = new ResizeObserver(debounce(() => {
 resizeObserver.observe(document.documentElement);
 
 // Console Branding
-console.log('%c🏛️ Welcome to my Museum-Quality Portfolio!', 
+console.log('%c🏛 Welcome to my Museum-Quality Portfolio!', 
     'color: #8b6f47; font-size: 24px; font-weight: 600; font-family: "Playfair Display", serif;');
 console.log('%c✨ Inspired by Harvey.ai aesthetics and Louvre sophistication', 
     'color: #6b5b73; font-size: 14px; font-style: italic;');
@@ -506,4 +506,3 @@ console.log('%c💼 Crafted for GFG Patna Workshop',
     'color: #7c8471; font-size: 12px;');
 console.log('%c🎨 Professional • Elegant • Unique', 
     'color: #c19a6b; font-size: 12px; font-weight: 500;');
-    

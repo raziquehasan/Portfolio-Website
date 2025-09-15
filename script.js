@@ -404,7 +404,7 @@ function initCreativeAnimations() {
             const rotateX = (mouseY / rect.height) * 5;
             const rotateY = (mouseX / rect.width) * -5;
             
-            this.style.transform = perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg);
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         });
         
         profileFrame.addEventListener('mouseleave', function() {
@@ -447,7 +447,7 @@ function initCreativeAnimations() {
         shapes.forEach((shape, index) => {
             const speed = 0.1 + (index * 0.05);
             const yPos = scrolled * speed;
-            shape.style.transform = translateY(${yPos}px);
+            shape.style.transform = `translateY(${yPos}px)`;
         });
     }, 16));
 }

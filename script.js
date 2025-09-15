@@ -142,7 +142,7 @@ function updateActiveNavLink() {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === #${currentSection}) {
+        if (link.getAttribute('href') === `#${currentSection}`) {
             link.classList.add('active');
         }
     });
